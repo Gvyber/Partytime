@@ -4,19 +4,16 @@ export const DoubleDice = {
   description: "Roll the dice. Face your fate.",
   render(root, api) {
     root.innerHTML = `
-      <div class="card" style="text-align:center;">
+      <div class="card" style="text-align:center; margin:12px 0;">
         <div id="player" class="pill">Tap Roll</div>
 
-        <div style="font-size:80px; margin:20px 0;" id="dice">🎲 🎲</div>
+        <div style="font-size:84px; margin:18px 0;" id="dice">🎲 🎲</div>
 
-        <div id="action" style="
-          font-size:20px;
-          line-height:1.4;
-          margin:20px 0;
-          min-height:80px;
-        "></div>
+        <div id="action" style="font-size:20px; line-height:1.45; min-height:110px;"></div>
 
         <button id="roll">ROLL THE DICE</button>
+
+        <div class="small" style="margin-top:10px;">One roll = one fate.</div>
       </div>
     `;
 
