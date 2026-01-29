@@ -1,4 +1,5 @@
 import { MemoryLane } from "./games/memoryLane.js";
+import { DoubleDice } from "./games/doubleDice.js";
 
 /**
  * Global App State (shared across all games)
@@ -14,7 +15,7 @@ const state = {
   },
 };
 
-const games = [MemoryLane];
+const games = [MemoryLane, DoubleDice];
 
 const appEl = document.getElementById("app");
 
