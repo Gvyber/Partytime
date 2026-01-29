@@ -17,7 +17,7 @@ const state = {
   },
 };
 
-const games = [MemoryLane, DoubleDice, Taboo20];
+const games = [MemoryLane, DoubleDice, Taboo20, WahalaOrWinning];
 
 const appEl = document.getElementById("app");
 
