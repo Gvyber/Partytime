@@ -4,7 +4,7 @@ export const MemoryLane = {
   description: "Story starters that sound like you shouldn’t be saying them out loud. No pass.",
   render(root, api) {
     root.innerHTML = `
-      <div class="card" style="margin:12px 0;">
+      <div class="card" style="margin:12px 0; text-align:center;">
         <div class="row" style="align-items:center;">
           <div id="turn" class="pill">Press “Next turn”</div>
           <div style="text-align:right;" class="small">
@@ -12,20 +12,15 @@ export const MemoryLane = {
           </div>
         </div>
 
-        <div style="margin-top:12px;">
-          <div class="small" style="margin-bottom:6px; opacity:.8;">Starter line</div>
-          <div id="prompt" style="font-size:18px; line-height:1.35;"></div>
+        <div style="margin-top:14px;">
+          <div class="small" style="margin-bottom:6px;">Starter line</div>
+          <div id="prompt" style="font-size:22px; line-height:1.35; min-height:90px;"></div>
         </div>
 
         <button id="next">Next turn</button>
 
-        <div class="row">
-          <button class="secondary" id="plus">+1 point</button>
-          <button class="secondary" id="minus">-1 point</button>
-        </div>
-
-        <div class="small" style="margin-top:10px; opacity:.75;">
-          Rule: No pass. Answer or embrace your shame.
+        <div class="small" style="margin-top:10px;">
+          Rule: No pass. Answer or perish (socially).
         </div>
       </div>
     `;
@@ -54,7 +49,6 @@ export const MemoryLane = {
       ],
     };
 
-    // Spice rule: higher includes lower
     const spice = api.state.settings.spice;
     const prompts =
       spice === "high"
@@ -69,9 +63,8 @@ export const MemoryLane = {
     function nextPromptIndex() {
       if (prompts.length <= 1) return 0;
       let idx;
-      do {
-        idx = Math.floor(Math.random() * prompts.length);
-      } while (idx === lastPromptIndex);
+      do { idx = Math.floor(Math.random() * prompts.length); }
+      while (idx === lastPromptIndex);
       lastPromptIndex = idx;
       return idx;
     }
@@ -84,17 +77,5 @@ export const MemoryLane = {
     }
 
     root.querySelector("#next").onclick = nextTurn;
-
-    root.querySelector("#plus").onclick = () => {
-      if (!currentPlayer) return;
-      api.addScore(currentPlayer, 1);
-      alert(`${currentPlayer} +1`);
-    };
-
-    root.querySelector("#minus").onclick = () => {
-      if (!currentPlayer) return;
-      api.addScore(currentPlayer, -1);
-      alert(`${currentPlayer} -1`);
-    };
   },
 };
