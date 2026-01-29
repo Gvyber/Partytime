@@ -3,6 +3,7 @@ import { DoubleDice } from "./games/doubleDice.js";
 import { Taboo20 } from "./games/taboo20.js";
 import { WahalaOrWinning } from "./games/wahalaOrWinning.js";
 import { NeverHaveIEver } from "./games/neverHaveIEver.js";
+import { TruthOrDare } from "./games/truthOrDare.js";
 
 /**
  * Global App State (shared across all games)
@@ -18,7 +19,7 @@ const state = {
   },
 };
 
-const games = [MemoryLane, DoubleDice, Taboo20, WahalaOrWinning, NeverHaveIEver];
+const games = [MemoryLane, DoubleDice, Taboo20, WahalaOrWinning, NeverHaveIEver, TruthOrDare];
 
 const appEl = document.getElementById("app");
 
