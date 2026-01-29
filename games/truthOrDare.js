@@ -75,7 +75,7 @@ export const TruthOrDare = {
       currentType = type;
       const player = api.pickNextPlayer();
       root.querySelector("#turn").textContent = `Turn: ${player} — ${type.toUpperCase()} (L${currentLevel})`;
-      const q = pick(QUESTIONS[type][currentLevel]);
+      const q = pick(QUESTIONS[type][String(currentLevel)]);
       root.querySelector("#question").textContent = q;
     }
 
