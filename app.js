@@ -1,12 +1,13 @@
 import { MemoryLane } from "./games/memoryLane.js";
 import { DoubleDice } from "./games/doubleDice.js";
+import { Taboo20 } from "./games/taboo20.js";
 
 /**
  * Global App State (shared across all games)
+ * No scoring in this version.
  */
 const state = {
   players: [],
-  scores: {}, // { name: number }
   settings: {
     spice: "medium", // low | medium | high
   },
@@ -15,7 +16,7 @@ const state = {
   },
 };
 
-const games = [MemoryLane, DoubleDice];
+const games = [MemoryLane, DoubleDice, Taboo20];
 
 const appEl = document.getElementById("app");
 
@@ -39,10 +40,6 @@ function pickNextPlayer() {
   return state.picker.bag.pop();
 }
 
-function addScore(name, delta) {
-  state.scores[name] = (state.scores[name] ?? 0) + delta;
-}
-
 /** Simple renderer **/
 function render(screenFn) {
   appEl.innerHTML = "";
@@ -55,7 +52,7 @@ function SetupScreen() {
   card.className = "card";
   card.innerHTML = `
     <h1>Party Arcade 🎲</h1>
-    <p class="small">A tiny party games app. Add players, choose spice level, then play.</p>
+    <p>Pick players, choose spice level, then launch a game.</p>
     <hr/>
 
     <label>Spice level</label>
@@ -71,7 +68,7 @@ function SetupScreen() {
     <button id="start">Start</button>
 
     <p class="small" style="margin-top:10px;">
-      Rule: No pass in Memory Lane — if it picks you, you must answer 😈
+      Single-device mode: one phone shows the game, everyone plays together.
     </p>
   `;
   appEl.appendChild(card);
@@ -79,25 +76,14 @@ function SetupScreen() {
   card.querySelector("#start").onclick = () => {
     const spice = card.querySelector("#spice").value;
     const raw = card.querySelector("#players").value.trim();
-    const players = raw
-      .split(",")
-      .map((s) => s.trim())
-      .filter(Boolean);
+    const players = raw.split(",").map(s => s.trim()).filter(Boolean);
 
-    // Basic validation
     const unique = [...new Set(players.map(p => p.toLowerCase()))];
-    if (players.length < 2) {
-      alert("Add at least 2 players.");
-      return;
-    }
-    if (unique.length !== players.length) {
-      alert("Duplicate player names found. Make them unique.");
-      return;
-    }
+    if (players.length < 2) return alert("Add at least 2 players.");
+    if (unique.length !== players.length) return alert("Duplicate names found. Make them unique.");
 
     state.settings.spice = spice;
     state.players = players;
-    state.scores = Object.fromEntries(players.map((p) => [p, 0]));
     resetPickerBag();
 
     render(GameHubScreen);
@@ -138,29 +124,6 @@ function GameHubScreen() {
   });
 
   appEl.appendChild(list);
-
-  const scoreboard = document.createElement("div");
-  scoreboard.className = "card";
-  scoreboard.innerHTML = `
-    <h2>Scoreboard</h2>
-    <div id="scores" class="small"></div>
-    <button class="secondary" id="resetScores">Reset scores</button>
-  `;
-  appEl.appendChild(scoreboard);
-
-  const scoresEl = scoreboard.querySelector("#scores");
-  scoresEl.innerHTML = Object.entries(state.scores)
-    .sort((a, b) => b[1] - a[1])
-    .map(
-      ([name, score]) =>
-        `<div class="row"><div>${name}</div><div style="text-align:right;">${score}</div></div>`
-    )
-    .join("");
-
-  scoreboard.querySelector("#resetScores").onclick = () => {
-    state.players.forEach((p) => (state.scores[p] = 0));
-    render(GameHubScreen);
-  };
 }
 
 /** Game Screen **/
@@ -186,7 +149,6 @@ function GameScreen(game) {
   const api = {
     state,
     pickNextPlayer,
-    addScore,
     goHome: () => render(GameHubScreen),
   };
 
