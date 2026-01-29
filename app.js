@@ -1,6 +1,7 @@
 import { MemoryLane } from "./games/memoryLane.js";
 import { DoubleDice } from "./games/doubleDice.js";
 import { Taboo20 } from "./games/taboo20.js";
+import { WahalaOrWinning } from "./games/wahalaOrWinning.js";
 
 /**
  * Global App State (shared across all games)
