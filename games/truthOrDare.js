@@ -34,17 +34,101 @@ export const TruthOrDare = {
 
     // --- QUESTIONS (shortened here, you will paste your full lists) ---
    const QUESTIONS = {
-            'truth': {
-                1: [
-                    "Have you ever had a crush on someone in this room?", "What’s the most daring thing you've worn in public?", "Have you ever sent a flirty message and regretted it?", "What’s your biggest turn-on in someone’s appearance?", "Would you rather go on a secret date or a public one with someone risky?", "Have you ever been tempted to kiss someone you shouldn’t have?", "What’s your favorite part of the opposite sex’s body — and why?", "Have you ever flirted your way out of trouble?", "What’s the most romantic or sexy dream you’ve ever had?", "If you had to go on a date with someone here, who would you pick and why?", "What’s the cheesiest pick-up line you’ve secretly liked?", "What’s your guilty pleasure when you’re attracted to someone?", "Do you like it when someone takes control or plays hard to get?", "What’s something romantic or flirty that you’ve done that actually worked?", "Have you ever had a fantasy about someone at work, school, or church?", "What’s the most exciting compliment you’ve received from the opposite sex?", "Who in this room do you think is most likely to be a good kisser?", "Would you ever go skinny dipping if no one would find out?", "What’s the most spontaneous flirty move you’ve made?", "What’s a subtle but sexy thing you notice when you're attracted to someone?", "What’s the boldest way you've shown someone you liked them?", "Have you ever been caught checking someone out?", "If someone here slid into your DMs, who would make your heart race a little?", "What's a song that instantly puts you in a flirty mood?", "Have you ever had butterflies around someone in this group?", "What’s a harmless lie you’ve told to impress someone you liked?", "What outfit or look makes you feel your sexiest?", "Have you ever pretended not to like someone just to hide your feelings?", "What’s something non-physical that instantly attracts you to someone?", "If you could steal one kiss without consequences, who would it be from?"
-                ],
-                2: [
-                    "What’s your favorite sex position — and why?", "Have you ever had sex outdoors or in a risky place?", "How many people have you kissed in one day?", "Do you enjoy being dominant or submissive in bed?", "What’s your biggest sexual fantasy that you’ve never told anyone?", "Have you ever had phone sex, and how did it go?", "Have you ever masturbated to someone you know personally?", "What's the kinkiest thing you’ve ever tried in bed?", "How loud are you during sex — be honest?", "Have you ever had a one-night stand you still think about?", "What body part do you most enjoy being kissed or touched?", "What’s your favorite type of dirty talk to hear?", "Have you ever tried role-play — and what role did you play?", "Have you ever watched adult content with a partner?", "If you had to pick a fetish, what would it be?", "How often do you think about sex in a day?", "Have you ever hooked up with someone and forgot their name?", "What’s the naughtiest thought you’ve had during a normal conversation?", "Have you ever wanted to sleep with a friend but didn’t?", "Do you like being teased or doing the teasing?", "Have you ever fantasized about someone in a position of power over you?", "What’s the most risqué photo or video you’ve ever taken?", "Have you ever had sex in a place where you might have been caught?", "If you had to describe your best sexual experience in one word, what would it be?", "What is your secret move that you think drives people wild?", "Have you ever had sex with someone you didn’t expect to enjoy — but did?", "Have you ever said someone else's name in bed by mistake?", "Would you rather a long night of foreplay or a quick wild round?", "What’s the most adventurous place you’ve fantasized about having sex?"
-                ],
-                3: [
-                    "Describe in full detail the wildest sex dream you've ever had — who was in it, what happened, and how did it end?", "What’s the dirtiest thing you’ve ever whispered during sex — say it now like you meant it.", "Which part of your body do you secretly wish someone would obsess over — and what should they do to it?", "If someone here had to tie you up and take control, who would you choose — and what would you beg them to do?", "Describe your most intense orgasm — what triggered it and what sounds did you make?", "Have you ever secretly touched yourself thinking about someone in this room? Say who and what you imagined.", "If we turned off the lights right now, who would you sneak over to — and what would you do to them?", "What’s something sexual you’ve never done, but fantasize about regularly?", "Pick someone in the group and describe in detail how you’d seduce them from start to finish.", "What’s the naughtiest thing you've ever done with someone in public or semi-public — be honest and specific."
-                ]
-            },
+            truth: {
+  1: [
+    "Have you ever had a crush on someone in this room?",
+    "Who is the person you’ve been most attracted to in your entire life?",
+    "When was the last time you kissed someone?",
+    "Have you ever been tempted to kiss someone you shouldn’t have?",
+    "Have you ever flirted your way out of trouble?",
+    "What’s the most daring thing you've worn in public?",
+    "What’s the sexiest item of clothing you own?",
+    "Would you rather go on a secret date or a public one with someone risky?",
+    "Have you ever sent a flirty message and regretted it?",
+    "What’s your biggest turn-on in someone’s appearance?",
+    "What’s something non-physical that instantly attracts you to someone?",
+    "Have you ever been caught checking someone out?",
+    "Have you ever had butterflies around someone in this group?",
+    "If you had to go on a date with someone here, who would you pick and why?",
+    "If you could steal one kiss without consequences, who would it be from?",
+    "What’s the boldest way you've shown someone you liked them?",
+    "Have you ever pretended not to like someone just to hide your feelings?",
+    "What’s the most spontaneous flirty move you’ve made?",
+    "Have you ever worn clothing of the opposite sex?",
+    "If you knew you only had a short time left on earth, would you tell your crush you love them?",
+    "Tell the group two lies and one truth.",
+    "Have you ever been completely rejected by someone?",
+    "Is there someone everyone thinks is hot, but you think is unattractive?",
+    "Is there someone everyone thinks is unattractive, but you secretly find hot?",
+    "What’s the biggest age difference between you and someone you’ve dated or kissed?",
+    "Would you ever go skinny dipping if no one would find out?"
+  ],
+
+  2: [
+    "Have you ever regretted having sex with someone immediately afterwards?",
+    "Have you ever had sex with someone before you had even kissed them?",
+    "When is the last time you masturbated?",
+    "What age were you when you first masturbated?",
+    "When is the last time you watched porn?",
+    "What kind of porn do you love or hate and why?",
+    "Do you own any sex toys?",
+    "Do you enjoy being dominant or submissive in bed?",
+    "Have you ever dominated someone?",
+    "Have you ever been submissive for someone in the bedroom?",
+    "Have you ever had sex outdoors or in a risky place?",
+    "Have you ever had sex in public?",
+    "Have you ever tried anal?",
+    "Have you ever had a homosexual experience?",
+    "What kinds of sexual roleplaying have you done before?",
+    "What’s your favorite sex position and why?",
+    "What body part do you most enjoy being kissed or touched?",
+    "What turns you on the most in someone of the opposite sex?",
+    "Have you ever wanted to have sex with someone you’d never date?",
+    "Have you ever fantasized about someone in a position of power over you?",
+    "Have you ever had phone sex?",
+    "What’s the kinkiest thing you’ve ever tried?",
+    "Have you ever had a one-night stand you still think about?",
+    "What’s the most risqué photo or video you’ve taken?",
+    "What is the most orgasms you’ve had in one day?",
+    "What was your quickest orgasm ever?",
+    "What’s the most satisfying orgasm you’ve ever had?",
+    "Would you rather a long night of foreplay or a quick wild round?",
+    "Have you ever said someone else’s name in bed by mistake?",
+    "What’s the dirtiest dream you’ve ever had?",
+    "Have you ever had sex somewhere you might have been caught?",
+    "What’s the most adventurous place you’ve fantasized about having sex?",
+    "If you could change genders for one day, what would you do first?",
+    "If you could have a threesome with two people, who would you choose?",
+    "Would you ever have a threesome?",
+    "Describe the last piece of erotica you read.",
+    "Have you ever considered exploring the swinging lifestyle?",
+    "What is the horniest you’ve ever felt?",
+    "What is the weirdest thing that turns you on?",
+    "Tell everyone about the best sex you ever had."
+  ],
+
+  3: [
+    "Describe in full detail the wildest sex dream you've ever had.",
+    "What’s the dirtiest thing you’ve ever whispered during sex?",
+    "Have you ever swallowed your partner’s ejaculate?",
+    "Who do you think about during sex other than your partner?",
+    "When is the last time you had a hard-on?",
+    "Have you ever hired a prostitute?",
+    "What would you do if you found out your partner used to be a prostitute?",
+    "Do you ever wish you had bigger intimate features?",
+    "What is the biggest penis you have ever seen in real life?",
+    "What’s the nastiest thing you’ve ever done?",
+    "If someone here had to tie you up and take control, who would you choose?",
+    "Have you ever secretly touched yourself thinking about someone in this room?",
+    "If we turned off the lights right now, who would you sneak over to?",
+    "Pick someone in the group and describe how you’d seduce them.",
+    "What’s the naughtiest thing you've ever done in public?",
+    "If your ultimate fantasy person required something extreme to sleep with you, would you do it?",
+    "If someone paid you for sex, would you do it?",
+    "If you had to choose between a great face and horrible body or terrible face and great body, what would you choose?",
+    "What is the most important part of someone’s anatomy to you?"
+  ]
+},
             'dare': {
                 1: [
                     "Give a slow shoulder massage to someone of your choice for 30 seconds.", "Do a 2-minute sensual slow dance to a song of your choice.", "Sit facing someone and maintain deep eye contact for 60 seconds without laughing.", "Let everyone watch as you perform your sexiest dance move.", "Maintain close eye contact while someone slowly runs a finger down your arm.", "Let someone guide your hands to 'read their body like braille' (clothes on).", "Kiss someone lightly on the neck or shoulder, then kiss them on the lips for a few seconds.", "Share a secret desire with someone in private — whisper it close to their ear.", "Do a slow spin while someone watches and describes what they like most about you.", "Sit beside someone and move on their lap or leg to music — you can exchange places if you want.", "Blindfold yourself and guess who touches you (on the arm or face) just by feel.", "Put your head on someone’s chest and stay there for 30 seconds.", "Let someone adjust your hair or outfit as if prepping you for a date.", "Hold someone's hand and describe what you'd do if you were alone together for one hour.", "Play a flirty staring contest — loser gives a peck on the cheek.", "Show someone how you’d seduce a crush with just body language.", "Pretend you’re on a romantic movie set — do a dramatic pose with someone.", "Let someone lightly trace your lips or jawline with a feather or finger.", "Lie beside someone on the floor without touching for 1 minute — highest tension wins.", "Sit face to face with someone and tell them one thing you’d love to try with them.", "Whisper something seductive into the ear of someone you're most attracted to.", "Sit on someone’s lap and maintain eye contact for 20 seconds — no talking.", "Dance closely with someone for 1 minute — your choice of song and style.", "Lie on the floor and let someone draw on your body (clothes on) using their finger.", "Play “guess the item” — someone puts an object in a bag, and you feel it blindfolded.", "Blow softly on someone’s neck or ear — they must stay completely still.", "Get behind someone and hold their waist while swaying to a song — 30 seconds.", "Do a slow, teasing body roll or belly dance in front of the group.", "Let someone feed you something sweet with their hands — no utensils.", "Pick someone to hold your waist and guide you in a slow dance for 1 minute, no speaking allowed."
@@ -60,22 +144,33 @@ export const TruthOrDare = {
 
     let currentLevel = 1;
     let currentType = null;
-    let lastIndex = -1;
+   const usedTracker = {
+  truth: { 1: [], 2: [], 3: [] },
+  dare: { 1: [], 2: [], 3: [] }
+};
 
-    function pick(arr) {
-      let idx;
-      do {
-        idx = Math.floor(Math.random() * arr.length);
-      } while (idx === lastIndex);
-      lastIndex = idx;
-      return arr[idx];
-    }
+function pick(type, level) {
+  const pool = QUESTIONS[type][String(level)];
+  let available = pool.filter((_, i) => !usedTracker[type][level].includes(i));
+
+  if (available.length === 0) {
+    usedTracker[type][level] = [];
+    available = pool;
+  }
+
+  const randomIndex = Math.floor(Math.random() * available.length);
+  const chosen = available[randomIndex];
+  const originalIndex = pool.indexOf(chosen);
+
+  usedTracker[type][level].push(originalIndex);
+  return chosen;
+}
 
     function ask(type) {
       currentType = type;
       const player = api.pickNextPlayer();
       root.querySelector("#turn").textContent = `Turn: ${player} — ${type.toUpperCase()} (L${currentLevel})`;
-      const q = pick(QUESTIONS[type][String(currentLevel)]);
+      const q = pick(type, currentLevel);
       root.querySelector("#question").textContent = q;
     }
 
