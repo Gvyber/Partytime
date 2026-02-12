@@ -34,7 +34,7 @@ export const TruthOrDare = {
 
     // --- QUESTIONS (shortened here, you will paste your full lists) ---
    const QUESTIONS = {
-            truth: {
+           truth: {
   1: [
     "Have you ever had a crush on someone in this room?",
     "Who is the person you’ve been most attracted to in your entire life?",
@@ -70,17 +70,17 @@ export const TruthOrDare = {
     "When is the last time you masturbated?",
     "What age were you when you first masturbated?",
     "When is the last time you watched porn?",
-    "What kind of porn do you love or hate and why?",
+    "What kind of porn do you love or hate? Why?",
     "Do you own any sex toys?",
     "Do you enjoy being dominant or submissive in bed?",
     "Have you ever dominated someone?",
     "Have you ever been submissive for someone in the bedroom?",
     "Have you ever had sex outdoors or in a risky place?",
-    "Have you ever had sex in public?",
+    "Have you ever had sex in public? Do you want to try?",
     "Have you ever tried anal?",
     "Have you ever had a homosexual experience?",
     "What kinds of sexual roleplaying have you done before?",
-    "What’s your favorite sex position and why?",
+    "What’s your favorite sex position — and why?",
     "What body part do you most enjoy being kissed or touched?",
     "What turns you on the most in someone of the opposite sex?",
     "Have you ever wanted to have sex with someone you’d never date?",
@@ -99,7 +99,7 @@ export const TruthOrDare = {
     "What’s the most adventurous place you’ve fantasized about having sex?",
     "If you could change genders for one day, what would you do first?",
     "If you could have a threesome with two people, who would you choose?",
-    "Would you ever have a threesome?",
+    "Would you ever have a threesome with two guys and one girl? Or two girls and one guy?",
     "Describe the last piece of erotica you read.",
     "Have you ever considered exploring the swinging lifestyle?",
     "What is the horniest you’ve ever felt?",
@@ -111,22 +111,23 @@ export const TruthOrDare = {
     "Describe in full detail the wildest sex dream you've ever had.",
     "What’s the dirtiest thing you’ve ever whispered during sex?",
     "Have you ever swallowed your partner’s ejaculate?",
-    "Who do you think about during sex other than your partner?",
+    "Who do you think about during sex other than me?",
     "When is the last time you had a hard-on?",
     "Have you ever hired a prostitute?",
     "What would you do if you found out your partner used to be a prostitute?",
-    "Do you ever wish you had bigger intimate features?",
+    "Guys: Do you ever wish you had a bigger penis? Women: Do you ever wish you had bigger breasts?",
     "What is the biggest penis you have ever seen in real life?",
-    "What’s the nastiest thing you’ve ever done?",
+    "What’s the sluttiest or nastiest thing you’ve ever done?",
     "If someone here had to tie you up and take control, who would you choose?",
     "Have you ever secretly touched yourself thinking about someone in this room?",
     "If we turned off the lights right now, who would you sneak over to?",
     "Pick someone in the group and describe how you’d seduce them.",
-    "What’s the naughtiest thing you've ever done in public?",
+    "What’s the naughtiest thing you've ever done in public or semi-public?",
     "If your ultimate fantasy person required something extreme to sleep with you, would you do it?",
-    "If someone paid you for sex, would you do it?",
+    "Guys only: If women paid you for sex, would you become a male prostitute?",
+    "Guys only: If she’d try anal only if you tried it first with a strap-on, what would you say?",
     "If you had to choose between a great face and horrible body or terrible face and great body, what would you choose?",
-    "What is the most important part of someone’s anatomy to you?"
+    "What is the most important part of a man or woman’s anatomy to you?"
   ]
 },
             'dare': {
