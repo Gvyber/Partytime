@@ -170,7 +170,7 @@ export const TruthOrDare = {
     "Recreate the sounds you make during sex.",
     "With a blindfold on, try to identify the person that is selected by the others to kiss you.",
     "Show everyone playing the game your favorite porn site.",
-    "No dare for you, you horny MF."
+    "No dare for you, you horny MF.",
     `Choose someone. Sit knee-to-knee and hold eye contact while they describe what they find attractive about you.`,
 `Let someone guide you in a slow dance — but they must keep one hand firmly on your waist the entire time.`,
 `Whisper something you’ve always wanted to try but never admitted aloud.`,
@@ -244,7 +244,7 @@ export const TruthOrDare = {
 `Rest your hands inside anyone you choose’s pants for the next 2 minutes.`,
 `Recreate the weirdest thing that ever happened to you during sex.`,
 `Tell two people in the group to start kissing, then direct them to start doing other stuff like undressing or groping for 1 minute.`,
-`Tell two people in the group to start kissing, then direct them to start doing other stuff like undressing or groping for 2 minutes.` 
+`Tell two people in the group to start kissing, then direct them to start doing other stuff like undressing or groping for 2 minutes.`,
                 `Choose someone. For the next 3 full minutes, they control where you sit, stand, or move ; no speaking allowed from you.`,
 `Stand against a wall. Someone stands in front of you and may adjust your posture, chin, shoulders, or waist slowly for 60 seconds.`,
 `Choose someone. Sit on their lap for 1 minute. You may move or not once seated.`,
@@ -307,7 +307,7 @@ export const TruthOrDare = {
 };
 
 function pick(type, level) {
-  const pool = QUESTIONS[type][String(level)];
+  const pool = QUESTIONS[type][level];
   let available = pool.filter((_, i) => !usedTracker[type][level].includes(i));
 
   if (available.length === 0) {
