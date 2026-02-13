@@ -301,6 +301,7 @@ export const TruthOrDare = {
 
     let currentLevel = 1;
     let currentType = null;
+    let currentPlayer = null;
    const usedTracker = {
   truth: { 1: [], 2: [], 3: [] },
   dare: { 1: [], 2: [], 3: [] }
@@ -323,13 +324,19 @@ function pick(type, level) {
   return chosen;
 }
 
-    function ask(type) {
-      currentType = type;
-      const player = api.pickNextPlayer();
-      root.querySelector("#turn").textContent = `Turn: ${player} — ${type.toUpperCase()} (L${currentLevel})`;
-      const q = pick(type, currentLevel);
-      root.querySelector("#question").textContent = q;
-    }
+   function ask(type, keepPlayer = false) {
+  currentType = type;
+
+  if (!keepPlayer || !currentPlayer) {
+    currentPlayer = api.pickNextPlayer();
+  }
+
+  root.querySelector("#turn").textContent =
+    `Turn: ${currentPlayer} — ${type.toUpperCase()} (L${currentLevel})`;
+
+  const q = pick(type, currentLevel);
+  root.querySelector("#question").textContent = q;
+}
 
     root.querySelector("#lvl1").onclick = () => currentLevel = 1;
     root.querySelector("#lvl2").onclick = () => currentLevel = 2;
@@ -338,20 +345,18 @@ function pick(type, level) {
     root.querySelector("#truth").onclick = () => ask("truth");
     root.querySelector("#dare").onclick = () => ask("dare");
 
-   root.querySelector("#tooEasy").onclick = () => {
-  if (!currentType) return; // nothing selected yet
+ root.querySelector("#tooEasy").onclick = () => {
+  if (!currentType) return; // must have picked Truth or Dare first
 
-  if (currentLevel < 3) {
-    currentLevel++;
-  }
-
-  // Ask a new question at the updated level
-  ask(currentType);
+  currentLevel = Math.min(3, currentLevel + 1);
+  ask(currentType, true); // keep same player, same type
 };
 
-    root.querySelector("#next").onclick = () => {
-      root.querySelector("#question").textContent = "";
-      root.querySelector("#turn").textContent = "Press Truth or Dare";
-    };
+   root.querySelector("#next").onclick = () => {
+  currentType = null;
+  currentPlayer = null;
+  root.querySelector("#question").textContent = "";
+  root.querySelector("#turn").textContent = "Press Truth or Dare";
+};
   }
 };
