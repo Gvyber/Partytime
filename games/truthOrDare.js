@@ -130,10 +130,48 @@ export const TruthOrDare = {
     "What is the most important part of a man or woman’s anatomy to you?"
   ]
 },
-            'dare': {
-                1: [
-                    "Give a slow shoulder massage to someone of your choice for 30 seconds.", "Do a 2-minute sensual slow dance to a song of your choice.", "Sit facing someone and maintain deep eye contact for 60 seconds without laughing.", "Let everyone watch as you perform your sexiest dance move.", "Maintain close eye contact while someone slowly runs a finger down your arm.", "Let someone guide your hands to 'read their body like braille' (clothes on).", "Kiss someone lightly on the neck or shoulder, then kiss them on the lips for a few seconds.", "Share a secret desire with someone in private — whisper it close to their ear.", "Do a slow spin while someone watches and describes what they like most about you.", "Sit beside someone and move on their lap or leg to music — you can exchange places if you want.", "Blindfold yourself and guess who touches you (on the arm or face) just by feel.", "Put your head on someone’s chest and stay there for 30 seconds.", "Let someone adjust your hair or outfit as if prepping you for a date.", "Hold someone's hand and describe what you'd do if you were alone together for one hour.", "Play a flirty staring contest — loser gives a peck on the cheek.", "Show someone how you’d seduce a crush with just body language.", "Pretend you’re on a romantic movie set — do a dramatic pose with someone.", "Let someone lightly trace your lips or jawline with a feather or finger.", "Lie beside someone on the floor without touching for 1 minute — highest tension wins.", "Sit face to face with someone and tell them one thing you’d love to try with them.", "Whisper something seductive into the ear of someone you're most attracted to.", "Sit on someone’s lap and maintain eye contact for 20 seconds — no talking.", "Dance closely with someone for 1 minute — your choice of song and style.", "Lie on the floor and let someone draw on your body (clothes on) using their finger.", "Play “guess the item” — someone puts an object in a bag, and you feel it blindfolded.", "Blow softly on someone’s neck or ear — they must stay completely still.", "Get behind someone and hold their waist while swaying to a song — 30 seconds.", "Do a slow, teasing body roll or belly dance in front of the group.", "Let someone feed you something sweet with their hands — no utensils.", "Pick someone to hold your waist and guide you in a slow dance for 1 minute, no speaking allowed."
-                ],
+           dare: {
+  1: [
+    "Give a slow shoulder massage to someone of your choice for 30 seconds.",
+    "Do a 2-minute sensual slow dance to a song of your choice.",
+    "Sit facing someone and maintain deep eye contact for 60 seconds without laughing.",
+    "Let everyone watch as you perform your sexiest dance move.",
+    "Maintain close eye contact while someone slowly runs a finger down your arm.",
+    "Let someone guide your hands to “read their body like braille” (clothes on).",
+    "Kiss someone lightly on the neck or shoulder, then kiss them on the lips briefly.",
+    "Whisper a secret desire into someone’s ear.",
+    "Do a slow spin while someone describes what they like most about you.",
+    "Sit beside someone and move gently on their lap or leg to music.",
+    "Blindfold yourself and guess who touches you (arm or face only).",
+    "Put your head on someone’s chest for 30 seconds.",
+    "Let someone adjust your hair or outfit like they’re prepping you for a date.",
+    "Hold someone's hand and describe what you'd do if alone together for one hour.",
+    "Play a flirty staring contest — loser gives a peck on the cheek.",
+    "Show how you’d seduce a crush using only body language.",
+    "Do a dramatic romantic movie pose with someone.",
+    "Let someone lightly trace your lips or jawline with a finger.",
+    "Lie beside someone without touching for 1 minute — highest tension wins.",
+    "Sit face to face and tell someone one thing you’d love to try with them.",
+    "Sit on someone’s lap and maintain eye contact for 20 seconds — no talking.",
+    "Dance closely with someone for 1 minute.",
+    "Lie down and let someone draw on your body (clothes on) using their finger.",
+    "Blow softly on someone’s neck or ear — they must stay still.",
+    "Get behind someone and hold their waist while swaying to music for 30 seconds.",
+    "Do a slow teasing body roll in front of the group.",
+    "Let someone feed you something sweet with their hands.",
+    "Pick someone to guide you in a slow dance for 1 minute, no speaking allowed.",
+    "Swap clothes with anyone you choose.",
+    "Pass a candy or grape to anyone you choose using only your lips.",
+    "Kiss anyone you choose while also eating a candy.",
+    "Try to turn anyone you choose on without touching them.",
+    "Eat fruit or food off anyone you choose.",
+    "Drink a shot from anyone you choose’s belly button.",
+    "Twerk for anyone you choose or for the group.",
+    "Recreate the sounds you make during sex.",
+    "With a blindfold on, try to identify the person that is selected by the others to kiss you.",
+    "Show everyone playing the game your favorite porn site.",
+    "No dare for you, you horny MF."
+  ],
                 2: [
                     "Sit in front of someone and let them caress your thighs (over clothing) for 30 seconds.", "Allow someone to lick or kiss any body part of your choice.", "Do a slow full-body rubdown on someone — clothes stay on.", "Simulate oral teasing using either an ice cube or two fingers on someone’s arm or neck.", "Trace the person’s lips with your tongue, then kiss them deeply.", "Choose someone and demonstrate how you’d ride them — fully clothed, no grinding.", "Do a strip tease — remove one clothing item slowly for 90 seconds while everyone watches.", "Sit between someone’s legs, let them stroke your waist, and kiss for 30 seconds.", "Let someone touch and caress you however they like for 30 seconds.", "Do a slow, seductive strip tease — no full nudity.", "Do a dirty grind dance on someone for 30 seconds.", "Kiss and lightly bite someone’s ear while whispering something naughty for 30 seconds.", "Simulate a passionate make-out scene with someone for 30 seconds.", "Pick someone and do a body shot — then kiss for 30 seconds.", "Play the 'word moan' game — whisper a dirty word and moan after it for 4 rounds.", "Switch seats with someone and sit on their lap for the next two turns.", "Use your tongue to slowly trace a shape on someone's neck or stomach and let them guess it.", "Get on all fours while someone 'guides' your waist with their hands — 20 seconds.", "Let someone press their body against yours and guide you in a dirty grind — 30 seconds.", "Give someone a slow dance and end it with a passionate kiss.", "Give someone a slow, grinding lap dance for 60 seconds — their hands must stay on the chair.", "Lie face down and let someone grind lightly on you to the beat of a song — 30 seconds.", "With music on, pick a partner and dance as close as possible without fully touching.", "Let someone suck or lick something off your collarbone, shoulder, or stomach.", "Stand blindfolded while someone runs their hands along your sides and hips for 30 seconds.", "Simulate a slow-motion bedroom scene (no clothes removed) — 20 seconds with a partner.", "Choose someone and take turns whispering your wildest fantasies into each other’s ear.", "Place your hands on a partner's waist and grind from behind while they keep their hands behind their head — 45 seconds.", "Pick someone and take turns licking a small fruit (grape, strawberry) — no biting.", "Have a dirty dancing contest — each player has 30 seconds to seduce the others with only body movement."
                 ],
