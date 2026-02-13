@@ -338,9 +338,16 @@ function pick(type, level) {
     root.querySelector("#truth").onclick = () => ask("truth");
     root.querySelector("#dare").onclick = () => ask("dare");
 
-    root.querySelector("#tooEasy").onclick = () => {
-      if (currentLevel < 3) currentLevel++;
-    };
+   root.querySelector("#tooEasy").onclick = () => {
+  if (!currentType) return; // nothing selected yet
+
+  if (currentLevel < 3) {
+    currentLevel++;
+  }
+
+  // Ask a new question at the updated level
+  ask(currentType);
+};
 
     root.querySelector("#next").onclick = () => {
       root.querySelector("#question").textContent = "";
