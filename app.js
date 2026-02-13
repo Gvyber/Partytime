@@ -54,24 +54,26 @@ function SetupScreen() {
   const card = document.createElement("div");
   card.className = "card";
   card.innerHTML = `
-    <h1>Party Arcade 🎲</h1>
-    <p>Pick players, choose spice level, then launch a game.</p>
+    <div class="party-banner">
+      <h1>🎉 Party Arcade 🎲</h1>
+      <p>Get ready for epic party games like Truth or Dare, Never Have I Ever, and more! Set up your crew and let's get the fun started.</p>
+    </div>
     <hr/>
 
-    <label>Spice level</label>
+    <label>Spice Level 🔥</label>
     <select id="spice">
-      <option value="low">Low (PG)</option>
-      <option value="medium" selected>Medium</option>
-      <option value="high">High (Spicy)</option>
+      <option value="low">Low (PG) - Mild fun</option>
+      <option value="medium" selected>Medium - Balanced vibes</option>
+      <option value="high">High (Spicy) - Wild energy</option>
     </select>
 
-    <label>Players (comma-separated)</label>
+    <label>Players (comma-separated) 👥</label>
     <input id="players" placeholder="Fisayo, Tolu, Kunle, Zainab" />
 
-    <button id="start">Start</button>
+    <button class="arcade-button" id="start">Start the Party! 🚀</button>
 
     <p class="small" style="margin-top:10px;">
-      Single-device mode: one phone shows the game, everyone plays together.
+      Single-device mode: One phone shows the game, everyone plays together. Add 2+ players to begin!
     </p>
   `;
   appEl.appendChild(card);
@@ -82,8 +84,8 @@ function SetupScreen() {
     const players = raw.split(",").map(s => s.trim()).filter(Boolean);
 
     const unique = [...new Set(players.map(p => p.toLowerCase()))];
-    if (players.length < 2) return alert("Add at least 2 players.");
-    if (unique.length !== players.length) return alert("Duplicate names found. Make them unique.");
+    if (players.length < 2) return alert("Add at least 2 players to start the party! 🎉");
+    if (unique.length !== players.length) return alert("Duplicate names found. Make them unique for fair play.");
 
     state.settings.spice = spice;
     state.players = players;
