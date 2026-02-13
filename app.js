@@ -68,7 +68,7 @@ function SetupScreen() {
     </select>
 
     <label>Players (comma-separated) 👥</label>
-    <input id="players" placeholder="Fisayo, Tolu, Kunle, Zainab" />
+    <input id="players" placeholder="Deji, Kenny, Kunle, Zainab" />
 
     <button class="arcade-button" id="start">Start the Party! 🚀</button>
 
