@@ -1,12 +1,14 @@
 :root {
-  --bg1: #ff4d6d; /* Vibrant pink for party energy */
-  --bg2: #5c7cfa; /* Electric blue for arcade vibes */
-  --bg3: #20c997; /* Bright green for fun games */
+  --bg1: #dc2626; /* Vibrant red for party energy */
+  --bg2: #1e3a8a; /* Deep blue for arcade depth */
+  --bg3: #dc2626; /* Secondary red for balance (or swap with blue if needed) */
   --card: rgba(10, 12, 20, 0.55);
-  --stroke: rgba(255,255,255,0.14);
+  --stroke: rgba(192, 192, 192, 0.2); /* Silver lining for borders */
   --text: rgba(255,255,255,0.92);
   --muted: rgba(255,255,255,0.72);
-  --glow: 0 0 10px rgba(255, 77, 109, 0.5); /* Neon glow for fun */
+  --glow: 0 0 10px rgba(255, 215, 0, 0.5); /* Gold glow for highlights */
+  --gold: #ffd700; /* Gold accent */
+  --silver: #c0c0c0; /* Silver accent */
 }
 
 * { box-sizing: border-box; }
@@ -31,9 +33,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="2" fill="rgba(255,77,109,0.3)"/><circle cx="90" cy="20" r="1.5" fill="rgba(92,124,250,0.3)"/><circle cx="50" cy="80" r="2.5" fill="rgba(32,201,151,0.3)"/></svg>') repeat;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="10" cy="10" r="2" fill="rgba(220,38,38,0.3)"/><circle cx="90" cy="20" r="1.5" fill="rgba(30,58,138,0.3)"/><circle cx="50" cy="80" r="2.5" fill="rgba(255,215,0,0.2)"/></svg>') repeat;
   opacity: 0.1;
-  animation: float 10s ease-in-out infinite; /* Subtle confetti-like floating */
+  animation: float 10s ease-in-out infinite; /* Subtle floating confetti with new colors */
   pointer-events: none;
 }
 
@@ -55,8 +57,9 @@ body::before {
   margin-bottom: 40px;
   padding: 20px;
   background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  border: 2px solid var(--silver); /* Silver lining */
   border-radius: 22px;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4), var(--glow);
   animation: bounceIn 1s ease-out;
 }
 
@@ -78,9 +81,9 @@ body::before {
 }
 
 .card:hover {
-  transform: translateY(-5px) rotate(1deg); /* Slight tilt for fun */
-  box-shadow: 0 25px 60px rgba(0,0,0,0.5);
-  animation: shake 0.5s ease-in-out; /* Arcade rumble effect */
+  transform: translateY(-5px) rotate(1deg);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 15px var(--gold); /* Gold hover glow */
+  animation: shake 0.5s ease-in-out;
 }
 
 @keyframes shake {
@@ -91,7 +94,7 @@ body::before {
 
 .game-card {
   background: var(--card);
-  border: 2px solid var(--bg1);
+  border: 2px solid var(--gold); /* Gold border for game highlights */
   border-radius: 22px;
   padding: 20px;
   margin: 12px 0;
@@ -103,20 +106,20 @@ body::before {
 
 .game-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 20px var(--bg1);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.5), 0 0 20px var(--gold);
 }
 
 h1, h2 {
   margin: 0 0 10px;
   letter-spacing: -0.02em;
   font-weight: 700;
-  text-shadow: 0 0 10px var(--bg1); /* Neon glow */
+  text-shadow: 0 0 10px var(--gold); /* Gold text glow */
   animation: glowPulse 2s ease-in-out infinite;
 }
 
 @keyframes glowPulse {
-  0%, 100% { text-shadow: 0 0 10px var(--bg1); }
-  50% { text-shadow: 0 0 20px var(--bg1), 0 0 30px var(--bg2); }
+  0%, 100% { text-shadow: 0 0 10px var(--gold); }
+  50% { text-shadow: 0 0 20px var(--gold), 0 0 30px var(--bg1); }
 }
 
 h1 { font-size: 2.5rem; line-height: 1.2; }
@@ -130,7 +133,7 @@ input, select, button {
   width: 100%;
   padding: 12px 14px;
   border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.16);
+  border: 1px solid var(--stroke);
   background: rgba(255,255,255,0.06);
   color: var(--text);
   font-size: 16px;
@@ -139,8 +142,8 @@ input, select, button {
 }
 
 input:focus, select:focus, button:focus {
-  border-color: var(--bg1);
-  box-shadow: 0 0 0 3px rgba(255, 77, 109, 0.2);
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2); /* Gold focus ring */
 }
 
 input::placeholder { color: rgba(255,255,255,0.45); }
@@ -156,7 +159,7 @@ button {
 
 button:hover { filter: brightness(1.06); }
 button:active {
-  transform: translateY(2px) scale(0.98); /* Press effect like arcade button */
+  transform: translateY(2px) scale(0.98);
   animation: press 0.1s ease;
 }
 
@@ -165,7 +168,7 @@ button:active {
   100% { transform: scale(0.98); }
 }
 
-button.secondary { background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14); }
+button.secondary { background: rgba(255,255,255,0.07); border: 1px solid var(--stroke); }
 
 .arcade-button {
   background: linear-gradient(135deg, var(--bg1), var(--bg2));
@@ -173,8 +176,8 @@ button.secondary { background: rgba(255,255,255,0.07); border: 1px solid rgba(25
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  box-shadow: 0 12px 30px rgba(255, 77, 109, 0.3), var(--glow);
-  animation: bounce 1s ease-in-out infinite; /* Playful bounce */
+  box-shadow: 0 12px 30px rgba(220, 38, 38, 0.3), var(--glow);
+  animation: bounce 1s ease-in-out infinite;
 }
 
 @keyframes bounce {
@@ -183,7 +186,7 @@ button.secondary { background: rgba(255,255,255,0.07); border: 1px solid rgba(25
 }
 
 .arcade-button:hover {
-  box-shadow: 0 15px 40px rgba(255, 77, 109, 0.4), 0 0 25px var(--bg1);
+  box-shadow: 0 15px 40px rgba(220, 38, 38, 0.4), 0 0 25px var(--gold);
   transform: translateY(-2px);
 }
 
@@ -197,17 +200,17 @@ button.secondary { background: rgba(255,255,255,0.07); border: 1px solid rgba(25
   padding: 6px 12px;
   border-radius: 999px;
   background: rgba(255,255,255,0.09);
-  border: 1px solid rgba(255,255,255,0.14);
+  border: 1px solid var(--silver);
   color: var(--muted);
   transition: background 0.3s ease;
 }
 
-.pill:hover { background: rgba(255,255,255,0.15); }
+.pill:hover { background: rgba(255,215,0,0.1); } /* Subtle gold hover */
 
 .list { display: grid; gap: 10px; }
 
 hr {
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.12);
+  border-top: 1px solid var(--stroke);
   margin: 12px 0;
 }
